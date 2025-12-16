@@ -632,13 +632,20 @@ ul {
 .contact-content {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-xl);
+    align-items: flex-start;
+    gap: var(--spacing-lg);
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .contact-card {
     text-align: center;
     padding: var(--spacing-md);
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
 }
 
 .contact-icon {
@@ -685,7 +692,7 @@ ul {
 .footer {
     background-color: var(--color-text);
     color: var(--color-white);
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-sm) 0;
 }
 
 .footer-content {
@@ -694,15 +701,23 @@ ul {
 
 .footer-name {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: 4px;
 }
 
 .footer-title {
-    font-size: 0.9rem;
-    opacity: 0.8;
-    margin-bottom: var(--spacing-md);
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+
+.footer-copyright {
+    font-size: 0.75rem;
+    opacity: 0.5;
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-map-link {
